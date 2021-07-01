@@ -28,6 +28,14 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
 
+	<script>
+		function whatsappsend(message){
+		var sMsg = encodeURIComponent(message);
+		var whatsappurl ="https://wa.me/919400959902?text="+sMsg;
+
+		window.location.href = whatsappurl;
+	}
+	</script>
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -63,6 +71,7 @@
                         <li><a class="nav-link" href="#family">Family</a></li>
                         <li><a class="nav-link" href="#gallery">Gallery</a></li>
                         <li><a class="nav-link" href="#events">Events</a></li>
+						<li><a class="nav-link" href="#sendWishes">Send Wishes</a></li>
 						<li><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -149,8 +158,11 @@
 									<img loading="lazy" class="img-fluid rounded" src="images/akhila1c.jpg" alt="imgj" />
 								</div>
 							</div>
-							
 						</div>
+						
+	<!---<a target = "_blank" href="https://wa.me/919400959902?text=Best%20wishes%20and%20happy%20married%20life">
+							--->	
+					</div>
 					</div>
 				</div>
 			</div>
@@ -406,10 +418,33 @@
 					</div>
 				</div>
 				
+				
 		</div>
 	</div>
 	<!-- End Events -->
 
+<!--Wishes-->
+				<div id="story" class="story-box main-timeline-box">
+					<div id="sendWishes" class="container">
+						<div class="row">
+							<div class="col-lg-11">
+								<div class="title-box">
+									<h2>Send your Wishes</h2>
+								</div>
+									<p>In view of current social scenario, we humbly request your prayers and blessings.</p>
+							</div>
+							<div class="p-3 input-group">
+								<div class="input-group-prepend">
+								<!--<span class="text-dark input-group-text">Message</span> -->
+								</div>
+								<textarea placeholder="Enter your message here !" id="message" class="input-lg border border-dark form-control" aria-label="With textarea"></textarea>
+							</div>
+							<div class="pt-2 pl-3">
+							<button class="btn btn-success" onclick="whatsappsend(document.getElementById('message').value)">Send Wishes</button>
+							</div>			
+						</div>
+					</div>
+				</div>
 
 	<!-- Start Contact -->
 	<div id="contact" class="contact-box">
@@ -477,8 +512,7 @@
 			</div>
 		</div>
 	</footer>
-	<a href='https://www.symptoma.ro/'>Symptom Checker Romanian</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=fdd312a374909436086eff56e47954c1a18a3de3'></script>
-	<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/822913/t/7"></script>	
+		
 	<!-- End Footer -->
 
 	<!-- ALL JS FILES -->
@@ -493,6 +527,6 @@
 
 	<script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
-    <script src="js/custom.js"></script>
+	<script src="js/custom.js"></script>
 </body>
 </html>

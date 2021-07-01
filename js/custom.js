@@ -2,6 +2,12 @@
     "use strict";
 	
 	
+
+function whatsappsend(message){
+		var sMsg = encodeURIComponent(message);
+		var whatsappurl ="https://wa.me/919400959902?text="+sMsg;
+		window.location.href = whatsappurl;
+	}	
 	/* ..............................................
 	Loader 
     ................................................. */
