@@ -30,10 +30,18 @@
 
 	<script>
 		function whatsappsend(message){
-		var sMsg = encodeURIComponent(message);
+			console.log(message.length);
+		var sMsg="";
+		if(message.length != 0){
+			sMsg = encodeURIComponent(message);
+		
+		}
+		else{
+			sMsg = encodeURIComponent("Wishing you joy, love and happiness on your wedding day and as you begin your new life together");
+		}
 		var whatsappurl ="https://wa.me/919400959902?text="+sMsg;
-
 		window.location.href = whatsappurl;
+	
 	}
 	</script>
 
@@ -432,7 +440,7 @@
 								<div class="title-box">
 									<h2>Send your Wishes</h2>
 								</div>
-									<p>In view of current social scenario, we humbly request your prayers and blessings.</p>
+									<p class="text-dark"><strong>In view of current social scenario, we humbly request your prayers and blessings.</strong></p>
 							</div>
 							<div class="p-3 input-group">
 								<div class="input-group-prepend">
@@ -441,7 +449,7 @@
 								<textarea placeholder="Enter your message here !" id="message" class="input-lg border border-dark form-control" aria-label="With textarea"></textarea>
 							</div>
 							<div class="pt-2 pl-3">
-							<button class="btn btn-success" onclick="whatsappsend(document.getElementById('message').value)">Send Wishes</button>
+							<button class="btn btn-success" onclick="whatsappsend(document.getElementById('message').value)"><i class="pr-2 fa fa-whatsapp" aria-hidden="true"></i>Send Wishes</button>
 							</div>			
 						</div>
 					</div>
