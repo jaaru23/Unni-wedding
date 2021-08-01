@@ -25,6 +25,8 @@ body {
 }
 
 
+
+
 a {
     color: #1f1f1f;
     text-decoration: none !important;
@@ -121,6 +123,17 @@ a,
     font-size: 16px;
 }
 
+
+
+#preloader img {
+	margin: 22px;
+	padding: 2px;
+	width: 90%;
+	height: 80%;
+	border-radius: 10%;
+	filter: blur(.4px);
+}
+
 .lead {
     font-size: 18px;
     line-height: 30px;
@@ -160,7 +173,6 @@ button:focus{
     right: 0;
     bottom: 0;
     left: 0;
-    background: #dd666c;
     z-index: 11000;
     position: fixed;
     display: block;
