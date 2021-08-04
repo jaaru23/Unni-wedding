@@ -420,8 +420,8 @@ button:focus{
 	z-index: 3;
 }
 .lbox-details p strong{
-	color: #dd666c;
-	font-size: 40px;
+	
+	margin: 7px;
 	font-family: 'Marck Script', cursive;
 }
 .lbox-details a.btn{
